@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>アプリ</title>
+    <title>Document</title>
 </head>
 <body>
-    <a href="#">給与の計算</a> <br>
-    <a href="/enn">円の計算</a>
+    <form action="{{url_for('kekka')}}">
+        半径を入力して下さい<input type="text" name="en"><br>
+        <button type="submit">計算</button>
+
+    </form>
+    
 </body>
 </html>
